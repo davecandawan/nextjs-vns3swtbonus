@@ -414,7 +414,7 @@ const Content: React.FC<ContentProps> = ({
               <div className="space-y-8">
                 <div className="w-full max-w-[260px] mx-auto">
                   <Image
-                    src="/contentimages/swt1.webp"
+                    src="/contentimages/SWT1.webp"
                     alt="Gun-Free Zone Protection"
                     width={260}
                     height={260}
