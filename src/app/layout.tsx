@@ -5,14 +5,14 @@ import '@/styles/globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'VNSH Holster + FREE QuickDraw Gun Magnet',
+  title: 'VNSH Holster + FREE Shockwave Torch',
   description: 'Premium gun holsters and accessories',
   icons: {
     icon: '/favicon.png',
     apple: '/favicon.png',
   },
   openGraph: {
-    title: 'VNSH Holster + FREE QuickDraw Gun Magnet',
+    title: 'VNSH Holster + FREE Shockwave Torch',
     description: 'Premium gun holsters and accessories',
     type: 'website',
     images: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'VNSH Holster + FREE QuickDraw Gun Magnet',
+    title: 'VNSH Holster + FREE Shockwave Torch',
     description: 'Premium gun holsters and accessories',
     images: ['/favicon.png'],
   },
