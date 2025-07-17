@@ -30,9 +30,14 @@ const Content: React.FC<ContentProps> = ({
 
   return (
     <div className="min-h-screen bg-[url('/bg.webp')] bg-cover bg-fixed bg-repeat bg-center">
-      <div className="sticky top-0 left-0 right-0 w-full bg-custom-green text-black text-center py-2 px-4 text-[1.3rem] sm:text-[1.5rem] font-semibold z-50 shadow-md">
-        FREE 9,000 Volt Stun Gun With Every Order! (Normally{' '}
-        <span className="line-through">$44</span>)
+      <div className="sticky top-0 left-0 right-0 w-full bg-custom-green text-center py-2 px-4 text-[1.3rem] sm:text-[1.5rem] font-semibold z-50 shadow-md">
+        <a
+          href={getCheckoutUrl('https://secure.vnsh.com/vns3swtbonus/checkout')}
+          className="text-black hover:text-black hover:no-underline"
+        >
+          FREE 9,000 Volt Stun Gun With Every Order! (Normally{' '}
+          <span className="line-through">$44</span>)
+        </a>
       </div>
       <div className="w-full max-w-[1140px] mx-auto px-5 py-4 lg:px-20 bg-white">
         <div className="space-y-8">
@@ -412,30 +417,30 @@ const Content: React.FC<ContentProps> = ({
 
               {/* Second Column - Images */}
               <div className="space-y-8">
-                <div className="w-full max-w-[260px] mx-auto">
+                <div className="w-full max-w-[250px] mx-auto">
                   <Image
                     src="/contentimages/SWT1.webp"
                     alt="Gun-Free Zone Protection"
-                    width={260}
-                    height={260}
+                    width={250}
+                    height={250}
                     className="w-full h-auto object-cover"
                   />
                 </div>
-                <div className="w-full max-w-[260px] mx-auto">
+                <div className="w-full max-w-[250px] mx-auto">
                   <Image
                     src="/contentimages/img2-vnsh3swtbonus-mobile.jpg"
                     alt="High Voltage Protection"
-                    width={260}
-                    height={260}
+                    width={250}
+                    height={250}
                     className="w-full h-auto object-cover"
                   />
                 </div>
-                <div className="w-full max-w-[260px] mx-auto">
+                <div className="w-full max-w-[250px] mx-auto">
                   <Image
                     src="/contentimages/img3-vns3swtbonus-mobile.webp"
                     alt="Liability-Free Protection"
-                    width={260}
-                    height={260}
+                    width={250}
+                    height={250}
                     className="w-full h-auto object-cover"
                   />
                 </div>
