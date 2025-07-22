@@ -39,7 +39,7 @@ const Content: React.FC<ContentProps> = ({
           <span className="line-through">$44</span>)
         </a>
       </div>
-      <div className="w-full max-w-[1140px] mx-auto px-5 py-4 lg:px-20 bg-white">
+      <div className="w-full max-w-[1200px] mx-auto px-5 py-4 lg:px-20 bg-white -mt-2">
         <div className="space-y-8">
           <header className="text-center py-1">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-normal leading-snug md:leading-tight mb-4 px-2">
@@ -547,28 +547,18 @@ const Content: React.FC<ContentProps> = ({
                 </span>
               </p>
             </div>
-            {/* Testimonial Images */}
-            <div className="w-full my-8">
-              {/* Desktop Image */}
-              <div className="hidden md:block">
-                <Image
-                  src="/contentimages/TestimoniesDesktop1.webp"
-                  alt="Customer testimonials"
-                  width={1400}
-                  height={1000}
-                  className="w-full h-auto rounded-lg"
-                  priority
-                />
-              </div>
-              {/* Mobile Image */}
-              <div className="block md:hidden">
+            {/* Testimonial Image */}
+            <div className="w-full my-8 flex justify-center">
+              <div className="w-full max-w-[800px] mx-auto">
                 <Image
                   src="/contentimages/vnsh_TestimoniesMobile.webp"
-                  alt="Customer testimonials mobile"
-                  width={500}
-                  height={800}
-                  className="w-full h-auto rounded-lg"
+                  alt="Customer testimonials"
+                  width={800}
+                  height={775}
+                  className="rounded-lg w-full h-auto"
                   priority
+                  quality={100}
+                  unoptimized={false}
                 />
               </div>
             </div>

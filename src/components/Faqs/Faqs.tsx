@@ -14,9 +14,9 @@ interface FaqData {
 
 const FaqItem: React.FC<FaqItemProps> = ({ question, answer, isOpen, onClick }) => {
   return (
-    <div className="mb-2.5 rounded-lg overflow-hidden shadow-sm transition-shadow hover:shadow-md">
+    <div className="mb-2.5 overflow-hidden">
       <div
-        className="flex justify-between items-center bg-gray-100 p-4 cursor-pointer hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="flex justify-between items-center bg-[#f2f2f2] p-2 cursor-pointer hover:bg-[#f2f2f2] focus:outline-none focus:ring-2 focus:ring-blue-500 border border-[#dddddd]"
         onClick={onClick}
         role="button"
         tabIndex={0}
@@ -27,9 +27,9 @@ const FaqItem: React.FC<FaqItemProps> = ({ question, answer, isOpen, onClick }) 
           }
         }}
       >
-        <span className="text-blue-600 font-bold text-left text-lg md:text-xl">{question}</span>
+        <span className="text-[#007bff] font-bold text-left text-lg md:text-xl">{question}</span>
         <span
-          className="ml-4 text-blue-600 transition-transform duration-200"
+          className="ml-4 text-[#007bff] transition-transform duration-200"
           style={{ transform: isOpen ? 'rotate(180deg)' : 'rotate(0)' }}
           aria-hidden="true"
         >
@@ -89,8 +89,8 @@ const Faqs: React.FC = () => {
   };
 
   return (
-    <div className="w-full max-w-5xl mx-auto">
-      <div className="space-y-3">
+    <div className="w-full max-w-[68rem] mx-auto">
+      <div className="space-y-2">
         {faqData.map((item, index) => (
           <FaqItem
             key={index}
